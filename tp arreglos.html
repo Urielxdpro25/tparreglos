@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        document.write("arreglo 1")
+        document.write("<br>")
+        var arreglo1 = [1.50, 2.0, 1.85, 1.88, 1.90, 1.63, 1.23, 1.56, 1.90, 2.10]
+        document.write(arreglo1 + "<br>")
+        arreglo1.push(0.53)
+        document.write(arreglo1)
+
+        document.write("<br>")
+        document.write("<br>")
+        document.write("<br>")
+
+        document.write("arreglo 2")
+        document.write("<br>")
+        var arreglo2 = [" cristian romero ", "  marcos acuña ", " lautaro martines ", " lisandro martinez ", "dybala"]
+        document.write(arreglo2.join(``) + "<br>")
+        arreglo2.unshift("messi")
+        document.write(arreglo2.join(``))
+
+        document.write("<br>")
+        document.write("<br>")
+        document.write("<br>")
+
+        document.write("arreglo 3")
+        document.write("<br>")
+        var arreglo3 = [" cristian romero ", "  marcos acuña ", " lautaro martines ", " lisandro martinez ", "dybala"]
+        document.write(arreglo3.join(``) + "<br>")
+        arreglo3.pop()
+        document.write(arreglo3.join(``))
+
+        document.write("<br>")
+        document.write("<br>")
+        document.write("<br>")
+
+        document.write("arreglo 4")
+        document.write("<br>")
+        var arreglo4 = [1.50, 2.0, 1.85, 1.88, 1.90, 1.63, 1.23, 1.56, 1.90, 2.10]
+
+        arreglo4.pop() * 3
+        document.write(arreglo4)
+
+
+        document.write("<br>")
+        document.write("<br>")
+        document.write("<br>")
+
+        document.write("arreglo 5")
+
+        document.write("<br>")
+        var arreglo5 = []
+        var cont = 0
+        var N = parseInt(prompt("ingrese la cantidad de edades"))
+        do {
+            arreglo5[cont] = prompt("ingrese las edades")
+            arreglo5.shift() * 3
+            cont++
+        } while (cont < N)
+        document.write(arreglo5)
+
+
+    </script>
+</body>
+
+</html>
+<!-- 1- Cargar un arreglo con diez estaturas de personas.
+a. Agregar una estatura en la última posición.
+b. Mostrar el arreglo, con el nuevo valor asignado. -->
+
+<!-- 2- Cargar un arreglo que permita cargar a cinco jugadores de la selección.
+a. Agregar un jugador en la primera posición.
+b. Mostrar el arreglo, con el nuevo valor asignado. -->
+
+<!-- 3- Eliminar el último elemento del segundo arreglo -->
+
+<!-- 4- Eliminar los tres últimos elementos del primer arreglo -->
+
+<!-- 5- Cargar un arreglo con las edades de una cantidad N de personas. Luego eliminar las
+primeras cinco. -->
