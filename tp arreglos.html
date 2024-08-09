@@ -62,11 +62,28 @@
         var N = parseInt(prompt("ingrese la cantidad de edades"))
         do {
             arreglo5[cont] = prompt("ingrese las edades")
-            arreglo5.shift() * 3
+            //    arreglo5.shift() * 3
             cont++
         } while (cont < N)
         document.write(arreglo5)
 
+        document.write("<br>")
+        document.write("<br>")
+        document.write("<br>")
+
+        document.write("arreglo 5b")
+
+        document.write("<br>")
+        var arreglo5b = []
+        var cont = 0
+        var N = parseInt(prompt("ingrese la cantidad de edades"))
+        do {
+            arreglo5b[cont] = prompt("ingrese las edades")
+            arreglo5b.shift() * 3
+            cont++
+        } while (cont < N)
+        document.write("<br>")
+        document.write(arreglo5b)
 
     </script>
 </body>
